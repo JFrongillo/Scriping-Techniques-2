@@ -9,12 +9,18 @@ const dbConnection = require('./db/mongo');
 const app = express();
 const port = 3000;
 
+//Routes
+const customerRoutes = require('./routes/customerRoutes');
+
+
 
 //Middleware
 env.config();
 dbConnection();
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+app.use(express.json());
+app.use("/api/customer", customerRoutes);
+app.get("/api/", (req, res) => {
+    res.send("THIS IS WORKING");
 });
 
 app.listen(port, () => {

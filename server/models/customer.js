@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const customerSchema = new Schema({
@@ -8,5 +8,5 @@ const customerSchema = new Schema({
     problem_description: String,
 });
 
-export default mongoose.model('Customer', customerSchema);
+module.exports = mongoose.model('Customer', customerSchema);
     
