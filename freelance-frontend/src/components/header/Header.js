@@ -1,14 +1,15 @@
 import "./Header.css"
 
 export default function Header() {
+    //JSX code for the header of the webpage.
     return(
         <>
-            <div className="header">
-                <div className="headerTitles">
-                    <span className="headerTitleSm">Freelance</span>
-                    <span className="headerTitleLg">Blog</span>
-                </div>
-                <img className="headerImg" src="https://unsplash.com/photos/q2dUSl9S4Xg" alt="" />
+            <div class = "header">
+                <ul> 
+                    <li><a href = "#">About Us</a></li>
+                    <li><a href = "#">Services</a></li>
+                    <li><a href = "#">Contact Us</a></li>
+                </ul>
             </div>
         </>
     )
