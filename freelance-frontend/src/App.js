@@ -8,6 +8,7 @@ function App() {
       <Header />
       <main class = "main-content">
         <div class = "welcome-message">
+          {/*Maybe add a typing effect that says welcome in dfferent langages?*/}
           <h1>Welcome!</h1>
           <p>Welcome to our freelance page.</p>
         </div>
