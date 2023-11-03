@@ -6,11 +6,12 @@ export default function Header() {
         <>
             <div class = "header">
                 <ul> 
-                    <li><a href = "#">About Us</a></li>
+                    <li><a href = "#about-us">About Us</a></li>
                     <li><a href = "#">Services</a></li>
                     <li><a href = "#">Contact Us</a></li>
-                </ul>
-            </div>
+                    <li class = "aside-link"><a href = "#">Employee Login</a> </li>
+                </ul>    
+            </div> 
         </>
     )
 }
