@@ -2,8 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 0;
-    position: fixed;
+    background-color: #969696;
     width: 100%;
     z-index: 1000;
 }
@@ -29,6 +28,6 @@
 }
 
 .header li a:hover{
-    color: #f2f2f2;
+    color: #f2f2f24b;
 }
 

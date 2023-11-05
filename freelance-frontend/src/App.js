@@ -5,20 +5,27 @@ import Header from './components/header/Header';
 function App() {
   return (
     <>
-      <Header />
       <main class = "main-content">
-        <div class = "welcome-message">
-          {/*Maybe add a typing effect that says welcome in dfferent langages?*/}
-          <h1>Welcome!</h1>
-          <p>To <strong>Bella Technical Solutions</strong>'s home page!</p>
+        <div class = "company-logo">
+          <h1>Bella Technical Solutions</h1>
+          <p>Writing beautiful software, <i>one line at a time.</i> </p>
         </div>
-        <div>
-          <h2>What we do</h2>
-          <p>We provide a variety of services to our customers.</p>
-        </div>
-        <div id = "about-us">
+        {/* Header element on the page, each href will point to each section of the page */}
+        <Header />
+        <section id = "welcome-message">
+        <h1>Welcome!</h1>
+        </section>
+        <section id = "about-us">
+          <h2>Who we are</h2>
+          <p>We are two passionate Software Engineers from Salem State University looking to make the world a better place <br/> 
+          <code><i>One line of code at a time.</i></code></p>
+        </section>
+        <section id = "services"> 
 
-        </div>
+        </section>
+        <section id = "contact-us">
+
+        </section>
       </main>
     </>
   );
