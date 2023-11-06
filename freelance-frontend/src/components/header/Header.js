@@ -9,7 +9,7 @@ export default function Header() {
                     <li><a href = "#about-us">About Us</a></li>
                     <li><a href = "#">Services</a></li>
                     <li><a href = "#">Contact Us</a></li>
-                    <li class = "aside-link"><a href = "#">Employee Login</a> </li>
+                    <li><a href = "#">Employee Login</a> </li>
                 </ul>    
             </div> 
         </>

@@ -17,8 +17,27 @@ function App() {
         </section>
         <section id = "about-us">
           <h2>Who we are</h2>
-          <p>We are two passionate Software Engineers from Salem State University looking to make the world a better place <br/> 
-          <code><i>One line of code at a time.</i></code></p>
+          <p>
+            We are two passionate Software Engineers from Salem State University looking to make the world a better place <br/> 
+            <code>
+                <i>
+                    One line of code at a time.<br/>
+                </i>
+            </code>
+          </p>
+          <p>
+              Our team consists of two people: 
+          </p>
+          <table class = "employee-table">
+            <tr>
+              <td>
+                TODO: ADD JOSEPH BIO
+              </td>
+              <td>
+                TODO: ADD HATAIM BIO
+              </td>
+            </tr>
+          </table>
         </section>
         <section id = "services"> 
 
