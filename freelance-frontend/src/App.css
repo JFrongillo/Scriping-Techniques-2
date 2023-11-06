@@ -30,11 +30,65 @@ main.main-content{
   margin-bottom: 0; 
 }
 
+/*Joseph's Employee Photo*/
+.joe-photo{
+  background-image: url("../public/photo_2023-01-12_17-06-03.jpg");
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+.employee-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+.employee-container{
+  width: 600px; 
+  height: 200px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.employee-badge{
+  display: flex; 
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-info{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px; 
+  font-weight: 100;
+  font-size: 1.2em;
+  align-items: center;
+}
+
+.employee-bio{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+
+.employee-info h4 {
+  margin-bottom: 0;
+}
+
+.employee-info p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
 #welcome-message{ 
   font-weight: 100; 
   font-size: 100px;
 }
 
-/* #about-us{ 
-  
-} */
+

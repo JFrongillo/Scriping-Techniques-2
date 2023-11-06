@@ -25,20 +25,37 @@ function App() {
                 </i>
             </code>
           </p>
-          <p>
-              Our team consists of two people: 
-          </p>
+          <h3>Our team consists of two people:</h3>
           <table class = "employee-table">
             <tr>
-              <td>
-                TODO: ADD JOSEPH BIO
+              <td class = "employee-container">
+                  <div class = "employee-badge">
+                    <div class = "joe-photo"/>
+                    <div class = "employee-info">
+                      <h4>Joseph Frongillo</h4>
+                      <p>Chelsea, MA</p>
+                      <p>Software Engineer</p>
+                    </div>
+                  </div>
+                  <div class = "employee-bio">
+                    <p>
+                      Joseph is a Full Stack Software Engineer specalizing in Front End and Back end applications. 
+                      He has half a decade experience with programming with Java. 
+                      Has a good understanding of C, C++, JavaScript, and Python. 
+                      Experience with database development with SQL and MongoDB. 
+                      Fully knowledgeable in software patterns and practices, commertical experience of the full software lifecycle. 
+                      Strong attention to details.
+                    </p>
+                  </div>
               </td>
-              <td>
+              <td class = "employee-container">
                 TODO: ADD HATAIM BIO
               </td>
             </tr>
           </table>
         </section>
+        {/* Services section of the page
+            Will be in it's own component to make section this shorter*/}
         <section id = "services"> 
 
         </section>
