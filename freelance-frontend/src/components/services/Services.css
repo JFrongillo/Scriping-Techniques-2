@@ -1,0 +1,40 @@
+.services-container{
+    display: flex; 
+    justify-content: center;
+    size: 950px;  
+}
+
+.contact-us{
+    display: flex; 
+    justify-content: center;
+    size: 950px; 
+    padding: 25px;
+}
+
+.service{
+    padding: 0 20px 0; 
+    background-color: #6b6b6b;
+    width: 550px; 
+}
+
+.service ul{
+    padding: 0;
+}
+
+.service li{
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.2em;
+    font-weight: 100;
+    color:black;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.service-header{
+    font-size: 1.2em;
+    font-weight: 100;
+    color:black;
+    text-align: center;
+    background-color: #ffffff;
+}

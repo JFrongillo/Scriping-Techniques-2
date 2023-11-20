@@ -1,6 +1,7 @@
 import './App.css';
 
 import Header from './components/header/Header';
+import Services from './components/services/Services';
 
 function App() {
   return (
@@ -54,10 +55,9 @@ function App() {
             </tr>
           </table>
         </section>
-        {/* Services section of the page
-            Will be in it's own component to make section this shorter*/}
         <section id = "services"> 
-
+        <h2>What we have to offer!</h2>
+            <Services/>
         </section>
         <section id = "contact-us">
 

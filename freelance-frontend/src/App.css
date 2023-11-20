@@ -9,7 +9,6 @@ section{
 
 main.main-content{
   align-items: center;
-  height: 100vh;
   color: #f2f2f2;
 }
 
@@ -41,8 +40,9 @@ main.main-content{
 }
 
 .employee-table{
-  width: 100%;
   border-collapse: collapse;
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
