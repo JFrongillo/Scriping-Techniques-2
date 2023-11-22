@@ -4,59 +4,55 @@ import "./Services.css"
 export default function Services(){
     return(
         <>
+        <div class = "services-container">
             <p>
                 Our team specializes in customizing solutions that align perfectly with your unique requirements.
-                 Whether you're looking for a one-time service or ongoing support, we're here to assist.
+                Whether you're looking for a one-time service or ongoing support, we're here to assist.
             </p>
             <p>
                 From initial consultation to final implementation, our focus is on delivering exceptional quality and value. 
                 We understand that every client is different, and we're committed to finding the right approach for you.
             </p>
-            <h3>Here is some of the services that we offer:</h3>
-            <div class = "services-container">
-                <div class = "service">
-                    <div class = "service-header">
-                        <p><span>Website Administration</span></p>
-                    </div>
+            
+            <section>
+            <header>
+                <h3>Services that we offer.</h3>
+            </header>
+                <div class = "column">
+                    <h4>Website Administration</h4>
+                    <p class = "price">Starting at <span>$250</span>/mo</p>
                     <ul>
-                        <li><strong>Starting at: $250</strong></li>
                         <li>Frontend Services</li>
                         <li>Backend Services</li>
                         <li>Database Management</li>
+                        <li>Ongoing Maitenence</li>
                     </ul>
-                    <div class = "contact-us">
-                        <a href = "#contact">Contact Us</a>
-                    </div>
+                    <div class = "contact-us"><a href="#">Contact Us</a></div>
                 </div>
-                <div class = "service">
-                    <div class = "service-header">
-                        <p><span>Application Development</span></p>
-                    </div>
+                <div class = "column featured">
+                    <h4>Application Development</h4>
+                    <p class = "price">Starting at: <span>$1,000</span>/mo</p>
                     <ul>
-                        <li><strong>Starting at: $1,000</strong></li>
                         <li>Consultation</li>
                         <li>Development and Production</li>
-                        <li>24/7 Maitenence</li>
+                        <li>Database Development</li>
+                        <li>Ongoing <strong>24/7</strong> Maitenence</li>
                     </ul>
-                    <div class = "contact-us">
-                        <a href = "#contact">Contact Us</a>
-                    </div>
+                    <div class = "contact-us"><a href="#">Contact Us</a></div>
                 </div>
-                <div class = "service">
-                    <div class = "service-header">
-                        <p><span>Website Development</span></p>
-                    </div>
+                <div class = "column">
+                    <h4>Website Development</h4>
+                    <p class = "price">Starting at <span>$1,500</span>/mo</p>
                     <ul>
-                        <li><strong>Starting at: $1,500</strong></li>
                         <li>Consultation</li>
                         <li>Design, Implmentation, and Maitenence</li>
-                        <li>Database Design and Maitenence</li>
+                        <li>Database Design and Management</li>
+                        <li>Ongoing <strong>24/7</strong> Maitenence</li>
                     </ul>
-                    <div class = "contact-us">
-                        <a href = "#contact">Contact Us</a>
-                    </div>
+                    <div class = "contact-us"><a href="#">Contact Us</a></div>
                 </div>
-            </div>
+            </section>
+        </div>
         </>
     );
 }
