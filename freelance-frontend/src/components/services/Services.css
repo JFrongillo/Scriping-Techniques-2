@@ -15,7 +15,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 910px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.50);
 }
 
 .services-container section > header {
@@ -26,11 +29,9 @@
 
 .services-container section > .column {
     display: flex;
+    width: 300px; 
     flex-direction: column;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.50);
-    width: 300px;
-    margin: 10px;
+    flex: 1; /* Assigns flex-grow, flex-shrink, and flex-basis to 1 */
 }
 
 /* Additional style to place columns side by side */
@@ -39,6 +40,11 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .services-container section > .column {
+        /* Optional: Set a minimum width */
+        min-width: 250px; /* Adjust as needed */
     }
 }
 
