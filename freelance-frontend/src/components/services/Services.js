@@ -14,9 +14,9 @@ export default function Services(){
                 We understand that every client is different, and we're committed to finding the right approach for you.
             </p>
             
-            <section>
+            <div class = "services">
             <header>
-                <h3>Services that we offer.</h3>
+                <h3>Services That We Offer</h3>
             </header>
                 <div class = "column">
                     <h4>Website Administration</h4>
@@ -25,7 +25,7 @@ export default function Services(){
                         <li>Frontend Services</li>
                         <li>Backend Services</li>
                         <li>Database Management</li>
-                        <li>Ongoing Maitenence</li>
+                        <li>Ongoing <strong>24/7</strong> Maitenence</li>
                     </ul>
                     <div class = "contact-us"><a href="#">Contact Us</a></div>
                 </div>
@@ -44,14 +44,14 @@ export default function Services(){
                     <h4>Website Development</h4>
                     <p class = "price">Starting at <span>$1,500</span>/mo</p>
                     <ul>
-                        <li>Consultation</li>
-                        <li>Design, Implmentation, and Maitenence</li>
+                        <li>Design and Consultation</li>
+                        <li>Implmentation and Maitenence</li>
                         <li>Database Design and Management</li>
                         <li>Ongoing <strong>24/7</strong> Maitenence</li>
                     </ul>
                     <div class = "contact-us"><a href="#">Contact Us</a></div>
                 </div>
-            </section>
+            </div>
         </div>
         </>
     );

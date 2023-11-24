@@ -17,7 +17,7 @@ function App() {
         <h1>Welcome!</h1>
         </section>
         <section id = "about-us">
-          <h2>Who we are</h2>
+          <h2>Who We Are</h2>
           <p>
             We are two passionate Software Engineers from Salem State University looking to make the world a better place <br/> 
             <code>
@@ -56,7 +56,7 @@ function App() {
           </table>
         </section>
         <section id = "services"> 
-        <h2>What we have to offer!</h2>
+        <h2>Our Services</h2>
             <Services/>
         </section>
         <section id = "contact-us">
