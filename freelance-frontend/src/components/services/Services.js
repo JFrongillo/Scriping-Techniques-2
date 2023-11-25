@@ -27,7 +27,7 @@ export default function Services(){
                         <li>Database Management</li>
                         <li>Ongoing <strong>24/7</strong> Maitenence</li>
                     </ul>
-                    <div class = "contact-us"><a href="#">Contact Us</a></div>
+                    <div class = "contact-us"><a href="#contact-us">Contact Us</a></div>
                 </div>
                 <div class = "column featured">
                     <h4>Application Development</h4>
@@ -38,7 +38,7 @@ export default function Services(){
                         <li>Database Development</li>
                         <li>Ongoing <strong>24/7</strong> Maitenence</li>
                     </ul>
-                    <div class = "contact-us"><a href="#">Contact Us</a></div>
+                    <div class = "contact-us"><a href="#contact-us">Contact Us</a></div>
                 </div>
                 <div class = "column">
                     <h4>Website Development</h4>
@@ -49,7 +49,7 @@ export default function Services(){
                         <li>Database Design and Management</li>
                         <li>Ongoing <strong>24/7</strong> Maitenence</li>
                     </ul>
-                    <div class = "contact-us"><a href="#">Contact Us</a></div>
+                    <div class = "contact-us"><a href="#contact-us">Contact Us</a></div>
                 </div>
             </div>
         </div>

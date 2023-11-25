@@ -24,7 +24,7 @@ export default function Header() {
                     <li><a href = "#about-us" onClick={scrollToSelectedSection}>About Us</a></li>
                     <li><a href = "#services" onClick={scrollToSelectedSection}>Services</a></li>
                     <li><a href = "#contact-us" onClick={scrollToSelectedSection}>Contact Us</a></li>
-                    <li><a href = "#" onClick={scrollToSelectedSection}>Employee Login</a> </li>
+                    <li><a href = "#">Employee Login</a> </li>
                 </ul>    
             </div> 
         </>
