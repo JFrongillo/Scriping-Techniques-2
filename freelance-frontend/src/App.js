@@ -13,9 +13,6 @@ function App() {
         </div>
         {/* Header element on the page, each href will point to each section of the page */}
         <Header />
-        <section id = "welcome-message">
-        <h1>Welcome!</h1>
-        </section>
         <section id = "about-us">
           <h1>About Us</h1>
           <p>
@@ -56,7 +53,7 @@ function App() {
           </table>
         </section>
         <section id = "services"> 
-        <h2>Our Services</h2>
+        <h1>Our Services</h1>
             <Services/>
         </section>
         <section id = "contact-us">

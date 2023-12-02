@@ -52,15 +52,63 @@
 
 .column .price{
     text-align: center;
-    padding: 0; 
+    padding: 5px;
+    margin: 0;
     font-size: 1.5em;
-    font-weight: 100;
     height: 50px;
-    background-color: #b6b6b6;
+    background-color: var(--color-light-medium);
+    color: var(--color-darkest);
 }
 
 .price span{
     font-weight: 600;
+}
+
+/* List item styling */
+.column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.column li {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.column li:last-child {
+    border-bottom: none;
+}
+
+.column li:nth-child(even) {
+    background-color: var(--color-dark);
+    color: var(--color-lightest);
+}
+
+.column .contact-us {
+    background-color: var(--color-light-medium);
+    color: var(--color-darkest);
+    border: none;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s background-color;
+    text-decoration: none;
+}
+
+.column .contact-us:hover {
+    background-color: var(--color-lightest);
+}
+
+.column .contact-us a{
+    text-decoration: none;
+    color: var(--color-darkest);
+    
 }
 
 /* Additional style to place columns side by side */
