@@ -5,7 +5,6 @@ import Services from './components/services/Services';
 
 function App() {
 
-
   function handleSubmit(event){
     event.preventDefault();
     const data = new FormData(event.target);
@@ -19,8 +18,6 @@ function App() {
       console.log(error);
     });
   }
-
-
 
   return (
     <>

@@ -1,6 +1,6 @@
 <?php
 include 'db.php';
-header('Access-Control-Allow-Origin: http://localhost:3002'); // Replace with your front-end origin
+header('Access-Control-Allow-Origin: *'); // Replace with your front-end origin
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
 
