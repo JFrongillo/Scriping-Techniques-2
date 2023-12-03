@@ -73,6 +73,25 @@
   margin-bottom: 0;
 }
 
+.contact-form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 500px;
+}
+
+.contact-form fieldset{
+  width: 600px;
+  height: 200px;
+  padding: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
 
 #welcome-message{ 
   font-weight: 100; 

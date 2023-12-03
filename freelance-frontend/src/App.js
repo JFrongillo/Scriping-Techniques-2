@@ -4,6 +4,24 @@ import Header from './components/header/Header';
 import Services from './components/services/Services';
 
 function App() {
+
+
+  function handleSubmit(event){
+    event.preventDefault();
+    const data = new FormData(event.target);
+
+    fetch('http://localhost/Scriping-Techniques-Project-HZ-JF/freelance-frontend/php/submitForm.php', {
+      method: 'POST',
+      body: data,
+    }).then((response) => {
+      console.log(response);
+    }).catch((error) => { 
+      console.log(error);
+    });
+  }
+
+
+
   return (
     <>
       <main class = "main-content">
@@ -57,7 +75,22 @@ function App() {
             <Services/>
         </section>
         <section id = "contact-us">
-
+          <h1>Contact Us</h1>
+          <p>
+            We are always looking for new clients to work with. 
+            If you are interested in working with us, please fill out the contact
+            information below and we will get back to you as soon as possible. 
+          </p>  
+          <form class = "contact-form" onSubmit = {handleSubmit}>
+            <fieldset>
+              <legend>Contact Information</legend>
+              <input type = "text" id = "name" name = "customer_name" placeholder = "Your name:" required/>
+              <input type = "text" id = "company" name = "customer_company" placeholder = "Your company:" required/>
+              <input type = "text" id = "phone_number" name = "customer_phoneNumber" placeholder = "Phone number to reach you at:" required/>
+              <textarea rows = "5" id = "description" name = "description" placeholder = "Tell us about your company:" required/>
+              <input type = "submit"/>
+            </fieldset>
+          </form>
         </section>
       </main>
     </>
