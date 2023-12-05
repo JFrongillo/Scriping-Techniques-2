@@ -75,27 +75,50 @@
 
 .contact-form{
   display: flex;
-  justify-content: center;
-  margin-bottom: 500px;
-}
-
-.contact-form fieldset{
-  width: 600px;
-  height: 200px;
-  padding: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
+.contact-form input{
+  width: 400px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
 
+.contact-form textarea{
+  width: 400px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
 
+.contact-form input[type="submit"]{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  font-weight: 100;
+  font-size: 1em;
+}
 
+input.error  {
+  border: 2px solid red;
+}
 
-#welcome-message{ 
-  font-weight: 100; 
-  font-size: 100px;
+.error-list{
+  color: red;
+  font-weight: 100;
+  font-size: 1em;
+  margin-bottom: 10px;
 }
 
 

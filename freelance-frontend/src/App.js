@@ -1,23 +1,86 @@
 import './App.css';
 
+import {useState} from 'react'; 
+
 import Header from './components/header/Header';
 import Services from './components/services/Services';
 
 function App() {
 
+  const [data,setData] = useState({customer_name: "", customer_company: "", customer_phoneNumber: "", description: ""});
+
+  const handleChange = ({ currentTarget: input }) => {
+    setData({ ...data, [input.name]: input.value });
+  };
+
   function handleSubmit(event){
     event.preventDefault();
-    const data = new FormData(event.target);
-
-    fetch('http://localhost/Scriping-Techniques-Project-HZ-JF/freelance-frontend/php/submitForm.php', {
-      method: 'POST',
-      body: data,
-    }).then((response) => {
-      console.log(response);
-    }).catch((error) => { 
-      console.log(error);
-    });
+    //if the form does not contain ANY errors, proceed to submit the form.
+    if(checkForm()){
+      fetch('http://localhost/Scriping-Techniques-Project-HZ-JF/freelance-frontend/php/submitForm.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data),
+        }).then((response) => {
+          console.log(response);
+        }).catch((error) => { 
+          console.log(error);
+      });
+    }
   }
+
+  function checkForm(){
+    var name = document.getElementById("name"); 
+    var company = document.getElementById("company"); 
+    var phoneNumber = document.getElementById("phone_number"); 
+    var description = document.getElementById("description");
+    var error = document.getElementsByClassName("error-list");
+    var errors = []; 
+
+    if(data.customer_name === ""){
+      errors.push("Please enter your name.");
+      name.classList.add("error");
+    }
+    else{
+      name.classList.remove("error");
+    }
+
+    if(data.customer_company === ""){
+      errors.push("Please enter your company.");
+      company.classList.add("error");
+    }
+    else{
+      company.classList.remove("error");
+    }
+
+    if(data.customer_phoneNumber=== ""){
+      errors.push("Please enter your phone number.");
+      phoneNumber.classList.add("error");
+    } else {
+      phoneNumber.classList.remove("error");
+    }
+
+    if(data.description === ""){
+      errors.push("Please enter a description.");
+      description.classList.add("error");
+    } else {
+      description.classList.remove("error");
+    }
+
+    if(errors.length > 0){
+      error[0].innerHTML = "<ul>";
+      for(var i = 0; i < errors.length; i++){
+        error[0].innerHTML += "<li>" + errors[i] + "</li>";
+      }
+      error[0].innerHTML += "</ul>";
+      return false;
+    }
+
+    return true; 
+  }
+
 
   return (
     <>
@@ -79,14 +142,20 @@ function App() {
             information below and we will get back to you as soon as possible. 
           </p>  
           <form class = "contact-form" onSubmit = {handleSubmit}>
-            <fieldset>
-              <legend>Contact Information</legend>
-              <input type = "text" id = "name" name = "customer_name" placeholder = "Your name:" required/>
-              <input type = "text" id = "company" name = "customer_company" placeholder = "Your company:" required/>
-              <input type = "text" id = "phone_number" name = "customer_phoneNumber" placeholder = "Phone number to reach you at:" required/>
-              <textarea rows = "5" id = "description" name = "description" placeholder = "Tell us about your company:" required/>
+              <div>
+                  <input type = "text" id = "name" name = "customer_name" placeholder = "Your name:" onChange = {handleChange}/>
+              </div>
+              <div>
+                  <input type = "text" id = "company" name = "customer_company" placeholder = "Your company:" onChange = {handleChange}/>
+              </div>
+              <div>
+                  <input type = "text" id = "phone_number" name = "customer_phoneNumber" placeholder = "Phone number to reach you at:" onChange = {handleChange}/>
+              </div>
+              <div>
+                  <textarea rows = "5" id = "description" name = "description" placeholder = "Tell us about your company:" onChange = {handleChange} />
+              </div>
               <input type = "submit"/>
-            </fieldset>
+              <div class = "error-list"></div>
           </form>
         </section>
       </main>
