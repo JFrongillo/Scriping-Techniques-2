@@ -125,7 +125,19 @@ function App() {
                   </div>
               </td>
               <td class = "employee-container">
-                TODO: ADD HATAIM BIO
+              <div class="employee-badge">
+                      <div class="Haitam-photo" />
+                      <div class="employee-info">
+                        <h4>Haitam Zitouni</h4>
+                        <p>Revere, MA</p>
+                        <p>Software Engineer</p>
+                      </div>
+                    </div>
+                    <div class="employee-bio">
+                      <p>
+                      Haitam is an adept full-stack software engineer specializing in web development, demonstrating strong expertise in Java, JavaScript, and Python. His versatile skill set extends to working with SQL and NoSQL databases, reflecting proficiency in database development. With a keen understanding of the software lifecycle, Haitam leverages his commercial experience to contribute effectively at every project stage. His commitment to excellence and attention to detail ensures the delivery of high-quality software solutions.
+                      </p>
+                    </div>
               </td>
             </tr>
           </table>

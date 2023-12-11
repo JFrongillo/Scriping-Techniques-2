@@ -28,6 +28,15 @@
   background-position: center;
 }
 
+.Haitam-photo{
+  background-image: url("../public/IMG_4451.jpeg");
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
 .employee-table{
   border-collapse: collapse;
   display: flex;
@@ -97,6 +106,7 @@
   border-radius: 5px;
   border: 1px solid #ccc;
   padding-left: 10px;
+  resize: none;
 }
 
 .contact-form input[type="submit"]{
