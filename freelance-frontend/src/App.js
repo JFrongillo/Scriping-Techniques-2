@@ -8,6 +8,7 @@ import Services from './components/services/Services';
 function App() {
 
   const [data,setData] = useState({customer_name: "", customer_company: "", customer_phoneNumber: "", description: ""});
+  const [succcess, setSuccess] = useState(false);
 
   const handleChange = ({ currentTarget: input }) => {
     setData({ ...data, [input.name]: input.value });
@@ -23,8 +24,9 @@ function App() {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(data),
-        }).then((response) => {
+        }).then((response) => { 
           console.log(response);
+          setSuccess(true);
         }).catch((error) => { 
           console.log(error);
       });
@@ -37,6 +39,8 @@ function App() {
     var phoneNumber = document.getElementById("phone_number"); 
     var description = document.getElementById("description");
     var error = document.getElementsByClassName("error-list");
+
+
     var errors = []; 
 
     if(data.customer_name === ""){
@@ -55,7 +59,7 @@ function App() {
       company.classList.remove("error");
     }
 
-    if(data.customer_phoneNumber=== ""){
+    if(data.customer_phoneNumber === ""){
       errors.push("Please enter your phone number.");
       phoneNumber.classList.add("error");
     } else {
@@ -106,7 +110,7 @@ function App() {
             <tr>
               <td class = "employee-container">
                   <div class = "employee-badge">
-                    <div class = "joe-photo"/>
+                    <div class = "employee-photo joe-photo"/>
                     <div class = "employee-info">
                       <h4>Joseph Frongillo</h4>
                       <p>Chelsea, MA</p>
@@ -126,7 +130,7 @@ function App() {
               </td>
               <td class = "employee-container">
               <div class="employee-badge">
-                      <div class="Haitam-photo" />
+                      <div class="employee-photo Haitam-photo" />
                       <div class="employee-info">
                         <h4>Haitam Zitouni</h4>
                         <p>Revere, MA</p>
@@ -135,7 +139,11 @@ function App() {
                     </div>
                     <div class="employee-bio">
                       <p>
-                      Haitam is an adept full-stack software engineer specializing in web development, demonstrating strong expertise in Java, JavaScript, and Python. His versatile skill set extends to working with SQL and NoSQL databases, reflecting proficiency in database development. With a keen understanding of the software lifecycle, Haitam leverages his commercial experience to contribute effectively at every project stage. His commitment to excellence and attention to detail ensures the delivery of high-quality software solutions.
+                        Haitam is an adept full-stack software engineer specializing in web development, 
+                        demonstrating strong expertise in Java, JavaScript, and Python. 
+                        His versatile skill set extends to working with SQL and NoSQL databases, reflecting proficiency in database development. 
+                        With a keen understanding of the software lifecycle, Haitam leverages his commercial experience to contribute effectively at every project stage. 
+                        His commitment to excellence and attention to detail ensures the delivery of high-quality software solutions.
                       </p>
                     </div>
               </td>
@@ -167,6 +175,7 @@ function App() {
                   <textarea rows = "5" id = "description" name = "description" placeholder = "Tell us about your company:" onChange = {handleChange} />
               </div>
               <input type = "submit"/>
+              {succcess && <p>Your form has been submitted successfully!</p>}
               <div class = "error-list"></div>
           </form>
         </section>
