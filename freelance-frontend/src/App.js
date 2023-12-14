@@ -38,9 +38,8 @@ function App() {
     var company = document.getElementById("company"); 
     var phoneNumber = document.getElementById("phone_number"); 
     var description = document.getElementById("description");
-    var error = document.getElementsByClassName("error-list");
-
-
+    var error = document.getElementsByClassName("error-list")[0];
+    var phoneRegex = /^\d{10}$/;
     var errors = []; 
 
     if(data.customer_name === ""){
@@ -59,6 +58,13 @@ function App() {
       company.classList.remove("error");
     }
 
+    if (!phoneRegex.test(phoneNumber.value.trim())) {
+      errors.push("Please enter a valid phone number.");
+      phoneNumber.classList.add("error");
+    } else {
+      phoneNumber.classList.remove("error");
+    }
+
     if(data.customer_phoneNumber === ""){
       errors.push("Please enter your phone number.");
       phoneNumber.classList.add("error");
@@ -74,14 +80,15 @@ function App() {
     }
 
     if(errors.length > 0){
-      error[0].innerHTML = "<ul>";
+      error.innerHTML = "<ul>";
       for(var i = 0; i < errors.length; i++){
-        error[0].innerHTML += "<li>" + errors[i] + "</li>";
+        error.innerHTML += "<li>" + errors[i] + "</li>";
       }
-      error[0].innerHTML += "</ul>";
+      error.innerHTML += "</ul>";
       return false;
     }
 
+    error.innerHTML = "";
     return true; 
   }
 
